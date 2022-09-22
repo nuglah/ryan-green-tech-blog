@@ -11,4 +11,4 @@ https://cryptic-cove-59508.herokuapp.com/
 
 ## Usage
 
-Clicking the log in button will show a log in form. Entering the data will log you in. The home page displays all the posts. The login and logout links do work but you'd have to be able to do npm run seed, because I didn't get to the sign up button.
+Clicking the log in button will show a log in form. Entering the data will log you in. The home page displays all the posts. The login and logout links do work but you'd have to be able to do npm run seed, because I didn't get to the sign up button finished.
