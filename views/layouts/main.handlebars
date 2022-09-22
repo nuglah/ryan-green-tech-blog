@@ -8,18 +8,23 @@
   </head>
 
   <body>
-    <header class="display-flex justify-space-between align-center p-2">
+    <header class="display-flex justify-space-between p-2">
       <h1>
         Tech Blog
       </h1>
-      <nav>Home</nav>
-      <!-- Only display the logout button if the user is logged in -->
-      {{#if logged_in}}
-        <nav>
-          <button class="btn" id="logout">logout</button>
-        </nav>
-      {{/if}}
-
+      <span>
+        <nav><a href="/">Home</a></nav>
+        <!-- Only display the logout button if the user is logged in -->
+        {{#if logged_in}}
+          <nav>
+            <a id="logout" href="#">logout</a>
+          </nav>
+        {{else}}
+          <nav>
+            <a id="login" href="#">login</a>
+          </nav>
+        {{/if}}
+      </span>
     </header>
     <main class="container container-fluid mt-5">
       {{{body}}}
@@ -31,6 +36,8 @@
     <!-- Only include the logout script if the user is logged in -->
     {{#if logged_in}}
       <script src="/js/logout.js"></script>
+    {{else}}
+      <script src="/js/login2.js"></script>
     {{/if}}
   </body>
 
